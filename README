@@ -1,0 +1,28 @@
+RAILS 3 Template for generating a BDD style app.
+
+Sugar, which is sweeeeeeeeet, will give you the following gems:
+* Authlogic
+* Paperclip
+* S3
+* Haml
+* will_paginate
+* can_can
+* map_reduced (if you choose mongomapper)
+* rmagick
+
+Testing Gems
+* AutoTest
+* RSpec2
+* Cucumber
+* Cucumber-rails
+* Launchy
+* Webrat
+
+Sugar, since it's sweet, will also:
+* git setup
+* template cleanup
+* setup jquery and csrf
+* Use Blueprint CSS layout system
+* Show your flash messages
+* Create your authlogic user session methods and controller
+* Use the ChaiOne latest chaione.css awesome UI styles
