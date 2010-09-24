@@ -11,6 +11,7 @@ Sugar, which is sweeeeeeeeet, will give you the following gems:
 * rmagick
 
 Testing Gems
+* Factory Girl
 * AutoTest
 * RSpec2
 * Cucumber
