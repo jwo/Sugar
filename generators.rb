@@ -1,0 +1,1 @@
+run "git clone git://github.com/psynix/rails3_haml_scaffold_generator.git lib/generators/haml"

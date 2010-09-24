@@ -1,0 +1,350 @@
+/* forms.css */
+label {font-weight:bold;}
+fieldset {padding:1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
+legend {font-weight:bold;font-size:1.2em;}
+input[type=text], input[type=password], input.text, input.title, textarea, select {background-color:#fff;border:1px solid #bbb;}
+input[type=text]:focus, input[type=password]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus {border-color:#666;}
+input[type=text], input[type=password], input.text, input.title, textarea, select {margin:0.5em 0;}
+input.text, input.title {width:300px;padding:5px;}
+input.title {font-size:1.5em;}
+textarea.location {font-size:1.5em;width:390px;height:50px;padding:5px;}
+input.tiny {width:50px;}
+textarea {width:390px;height:75px;padding:5px;}
+input[type=checkbox], input[type=radio], input.checkbox, input.radio {position:relative;top:.25em;}
+form.inline {line-height:3;}
+form.inline p {margin-bottom:0;}
+.error, .notice, .success {padding:.8em;margin-bottom:1em;border:2px solid #ddd;}
+.error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;}
+.notice {background:#FFF6BF;color:#514721;border-color:#FFD324;}
+.success {background:#E6EFC2;color:#264409;border-color:#C6D880;}
+.error a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+
+
+
+
+.jquery-auto-geocoder-map {
+height:198px;
+width:288px;
+}
+.tag{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	background-color:#E7ECEC;
+	color:#555555;
+	display:inline-block;
+	font-size:95%;
+	line-height:18px;
+	margin:4px 2px 4px 0;
+	padding:2px 6px;
+	text-decoration:none;
+	white-space:nowrap;
+}
+.tag:hover{
+	background-color:#bcd2e3;
+}
+
+
+.pagination { padding: 3px; margin: 1px; } 
+.pagination a { padding: 2px 5px 2px 5px; margin: 2px; margin-top:1em; border: 1px solid #aaaadd; text-decoration: none; color: #000099; } 
+.pagination a:hover, 
+.pagination a:active { border: 1px solid #000099; color: #000; } 
+.pagination span.current { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid #000099; font-weight: bold; background-color: #000099; color: #FFF; } 
+.pagination span.disabled { padding: 2px 5px 2px 5px; margin: 2px; border: 1px solid #eee; color: #ddd; }
+
+
+
+.awesome, .awesome:visited {
+	background: #222 url(/images/alert-overlay.png) repeat-x; 
+	display: inline-block; 
+	padding: 5px 10px 6px; 
+	color: #fff; 
+	text-decoration: none;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+}
+
+.awesome:hover							{ background-color: #111; color: #fff; }
+.awesome:active							{ top: 1px; }
+.small.awesome, .small.awesome:visited 			{ font-size: 11px; padding: ; }
+.awesome, .awesome:visited,
+.medium.awesome, .medium.awesome:visited 		{ font-size: 13px; font-weight: bold; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25); }
+.large.awesome, .large.awesome:visited 			{ font-size: 14px; padding: 8px 14px 9px; }
+.blue.awesome, .blue.awesome:visited		{ background-color: #021F41; }
+.blue.awesome:hover							{ background-color: #007d9a; }
+.red.awesome, .red.awesome:visited			{ background-color: #B00606; }
+.red.awesome:hover							{ background-color: #872300; }
+
+
+
+
+table.striped {
+	border:1px solid #0C0C0C;
+	border-collapse:collapse;
+	margin:20px 20px 20px 0px;
+	width:100%;
+}
+table th, table td {
+	padding:2px;
+	margin:2px;
+}
+
+table.striped tr.alt td {
+	background-color: #def;
+}
+
+table.striped tr.hover td {
+	background-color: #cdf;
+}
+
+table.striped th {
+	background:#B00606;
+	color:#ffffff;
+	font-weight:bold;
+	border-right: 1px solid #333;
+	text-align: center;
+}
+
+table.striped td {
+	padding: 3px 6px;
+	border-right: 1px solid #333;
+}
+
+table.simple {
+	width: inherit;
+	border: solid 1px #ccc;
+}
+
+table.simple tr td {
+	padding: 8px;
+	border-bottom: solid 1px #ddd;
+	background-color: inherit;
+}
+
+
+.errorExplanation, #error_explanation{
+  border: 2px solid #fff;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+.errorExplanation ul, #error_explanation ul{
+	margin-left:20px;
+}
+
+.errorExplanation h2, #error_explanation h2{
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+  margin-bottom:10px;
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.fieldWithErrors input, .fieldWithErrors textarea, .field_with_errors input, .field_with_errors textarea{
+	border:2px solid #B00606;
+}
+
+#sidebar{margin-right:5px;}
+
+.padded{
+	padding-left:5px;
+	padding-top:10px;
+}
+
+.tooltip {
+	background-color:#000;
+	border:1px solid #fff;
+	padding:10px 15px;
+	width:200px;
+	display:none;
+	color:#fff;
+	text-align:left;
+	font-size:12px;
+
+	/* outline radius for mozilla/firefox only */
+	-moz-box-shadow:0 0 10px #000;
+	-webkit-box-shadow:0 0 10px #000;
+}
+
+
+/* For the details, see: http://flowplayer.org/tools/dateinput/index.html#skinning */
+
+/* the input field */
+.date {
+	border:1px solid #ccc;
+	text-align:center;
+}
+
+/* calendar root element */
+#calroot {
+	/* place on top of other elements. set a higher value if nessessary */
+	z-index:1;
+	
+	margin-top:-1px;
+	width:198px;
+	padding:2px;
+	background-color:#fff;
+	font-size:11px;
+	border:1px solid #ccc;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-box-shadow: 0 0 15px #666;
+	-webkit-box-shadow: 0 0 15px #666;	
+}
+
+/* head. contains title, prev/next month controls and possible month/year selectors */
+#calhead {	
+	padding:2px 0;
+	height:22px;
+} 
+
+#caltitle {
+	font-size:14px;
+	color:#0150D1;	
+	float:left;
+	text-align:center;
+	width:155px;
+	line-height:20px;
+	text-shadow:0 1px 0 #ddd;
+}
+
+#calnext, #calprev {
+	display:block;
+	width:20px;
+	height:20px;
+	background:transparent url(/images/prev.gif) no-repeat scroll center center;
+	float:left;
+	cursor:pointer;
+}
+
+#calnext {
+	background-image:url(/images/next.gif);
+	float:right;
+}
+
+#calprev.caldisabled, #calnext.caldisabled {
+	visibility:hidden;	
+}
+
+/* year/month selector */
+#caltitle select {
+	font-size:10px;	
+}
+
+/* names of the days */
+#caldays {
+	height:14px;
+	border-bottom:1px solid #ddd;
+}
+
+#caldays span {
+	display:block;
+	float:left;
+	width:28px;
+	text-align:center;
+}
+
+/* container for weeks */
+#calweeks {
+	background-color:#fff;
+	margin-top:4px;
+}
+
+/* single week */
+.calweek {
+	clear:left;
+	height:22px;
+}
+
+/* single day */
+.calweek a {
+	display:block;
+	float:left;
+	width:27px;
+	height:20px;
+	text-decoration:none;
+	font-size:11px;
+	margin-left:1px;
+	text-align:center;
+	line-height:20px;
+	color:#666;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px; 		
+} 
+
+/* different states */
+.calweek a:hover, .calfocus {
+	background-color:#ddd;
+}
+
+/* sunday */
+a.calsun {
+	color:red;		
+}
+
+/* offmonth day */
+a.caloff {
+	color:#ccc;		
+}
+
+a.caloff:hover {
+	background-color:rgb(245, 245, 250);		
+}
+
+
+/* unselecteble day */
+a.caldisabled {
+	background-color:#efefef !important;
+	color:#ccc	!important;
+	cursor:default;
+}
+
+/* current day */
+#calcurrent {
+	background-color:#498CE2;
+	color:#fff;
+}
+
+/* today */
+#caltoday {
+	background-color:#333;
+	color:#fff;
+}
+
+ul.flat{
+	list-style: none; 
+	margin-left: 0; 
+	padding-left: 1em;
+}
+
+table tr {vertical-align: middle;}
+
+.pointer{
+	height:25px !important;
+}
+
+a.password_reset_link{
+/*	padding-left:1em; */
+	color:#222222; 
+/*	font-size:1.4em*/
+}

@@ -1,9 +1,12 @@
 # Setup our Gems
 gem "rails", "3.0.0"
-# mongo_mapper
-gem 'mongo_mapper', "=0.8.4"
-gem "bson_ext"
-gem "bcrypt-ruby", :require => "bcrypt"
+
+if @mongomapper
+  gem 'mongo_mapper', "=0.8.4"
+  gem "bson_ext"
+  gem "bcrypt-ruby", :require => "bcrypt"
+  gem "map_reduced",">= 0.1.1"
+end
 
 gem 'haml'
 gem "authlogic"
