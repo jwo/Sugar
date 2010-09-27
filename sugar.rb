@@ -1,9 +1,18 @@
+#TODO:
+# - get the rails3 authlogic branch working
+# - confirm authlogic with mongo works
+
+# LATER
+# - get all in the resources and app folder
+
+
+#@@base_path = "http://github.com/jwo/Sugar/raw/master/"
 @@base_path = "/Users/jwo/chaione/sugar/"
 
 ask_orm = ask("\r\n\r\nWhat ORM framework do you want to use?\r\n\r\n(1) Active Record\r\n(2) MongoMapper Only\r\n(3) MongoMapper with ActiveRecord\r\n")
 if ["1", "2", "3"].include?(ask_orm)
-  @activerecord  = (ask_orm=="1") or (ask_orm=="3")
-  @mongomapper = (ask_orm=="2") or (ask_orm=="3")
+  @activerecord  = ["1","3"].include?(ask_orm)
+  @mongomapper = ["2","3"].include?(ask_orm)
 else
   puts "Woops! You must enter a number between 1 and 3"
   ask_orm
@@ -30,20 +39,21 @@ end
 apply "#{@@base_path}cleanup.rb"
 apply "#{@@base_path}app_config.rb"
 apply "#{@@base_path}app_gems.rb"
+apply "#{@@base_path}authlogic_rails3.rb"
+if @mongomapper
+  apply "#{@@base_path}mongo_patches.rb"
+end
 apply "#{@@base_path}bdd_gems.rb"
-apply "#{@@base_path}bdd_settings.rb"
 apply "#{@@base_path}jquery.rb"
 apply "#{@@base_path}static_resources.rb"
 apply "#{@@base_path}layouts.rb"
 apply "#{@@base_path}generators.rb"
-apply "#{@@base_path}static_home.rb"
-
-if @mongomapper
-  apply "#{@@base_path}mongo_patches.rb"
-end
-
 run "bundle install"
-
+apply "#{@@base_path}static_home.rb"
+apply "#{@@base_path}bdd_settings.rb"
+apply "#{@@base_path}controllers.rb"
+apply "#{@@base_path}models.rb"
+apply "#{@@base_path}views.rb"
 apply "#{@@base_path}git_setup.rb"
 
 if @activerecord 

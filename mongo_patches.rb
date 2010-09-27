@@ -1,4 +1,4 @@
-initializer 'a_paperclip', <<-CODE
+initializer 'a_paperclip.rb', <<-CODE
 module Paperclip
   module ClassMethods
     def has_attached_file name, options = {}
@@ -56,7 +56,7 @@ end
 ActiveRecord::Base.logger = Rails.logger
 CODE
 
-initializer 'authmonkey', <<-CODE
+initializer 'authmonkey.rb', <<-CODE
 # Monkeypatch to use a validates_numericality_of that MongoMapper's validation
 # library understands (no :greater_than_or_equal_to option).
 module Authlogic::ActsAsAuthentic::MagicColumns::Methods
@@ -166,24 +166,3 @@ module AuthlogicPlugin
   end
 end
 CODE
-
-unless @activerecord
-  run 'rm spec/spec_helper.rb'
-  file 'spec/spec_helper.rb', <<-CODE
-  # This file is copied to spec/ when you run 'rails generate rspec:install'
-  ENV["RAILS_ENV"] ||= 'test'
-  require File.expand_path("../../config/environment", __FILE__)
-  require 'rspec/rails'
-
-  # Requires supporting ruby files with custom matchers and macros, etc,
-  # in spec/support/ and its subdirectories.
-  Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
-
-  RSpec.configure do |config|
-    config.mock_with :rspec
-
-  end
-  
-CODE
-  
-end

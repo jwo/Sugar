@@ -8,9 +8,13 @@ if @mongomapper
   gem "map_reduced",">= 0.1.1"
 end
 
+if @activerecord
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+end
+
 gem 'haml'
-gem "authlogic"
 gem "paperclip", "~> 2.3.3"
 gem "cancan"
 gem "aws-s3"
 gem "rmagick"
+gem "will_paginate", "~> 3.0.pre2"

@@ -1,14 +1,23 @@
 module ApplicationHelper
-  def format_error_messages(errors)
-    result = ""
-    unless errors.empty?
-      result ="<div class='error'>"
-      errors.each do |e|
-        result+= "<li>#{e}</li>"
+
+  def format_error_messages(object, message=nil)
+    html = ""
+    unless object.errors.blank?
+      html << "<div class='errorExplanation #{object.class.name.humanize.downcase}Errors'>\n"
+      action_name = object.new_record? ? "creating" : "updating"
+      if message.blank?
+        html << "\t\t<h2>There was a problem #{action_name} the #{object.class.name.humanize.downcase}</h2>\n"
+      else
+        html << "<h2>#{message}</h2>"
+      end  
+      html << "\t\t<ul>\n"
+      object.errors.full_messages.each do |error|
+        html << "\t\t\t<li>#{error}</li>\n"
       end
-      result+= "</div>"
+      html << "\t\t</ul>\n"
+      html << "\t</div>\n"
     end
-    result
+    html
   end
 
   def flashy
@@ -23,4 +32,5 @@ module ApplicationHelper
     end
     return fl.html_safe
   end
+  
 end

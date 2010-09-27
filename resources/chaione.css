@@ -21,13 +21,6 @@ form.inline p {margin-bottom:0;}
 .notice a {color:#514721;}
 .success a {color:#264409;}
 
-
-
-
-.jquery-auto-geocoder-map {
-height:198px;
-width:288px;
-}
 .tag{
 	-moz-border-radius-bottomleft:5px;
 	-moz-border-radius-bottomright:5px;
@@ -58,7 +51,7 @@ width:288px;
 
 
 .awesome, .awesome:visited {
-	background: #222 url(/images/alert-overlay.png) repeat-x; 
+	background: #222 url(http://mobgenie-marketing.s3.amazonaws.com/alert-overlay.png) repeat-x; 
 	display: inline-block; 
 	padding: 5px 10px 6px; 
 	color: #fff; 
@@ -99,7 +92,7 @@ table th, table td {
 }
 
 table.striped tr.alt td {
-	background-color: #def;
+	background-color: #eee;
 }
 
 table.striped tr.hover td {
@@ -164,7 +157,6 @@ table.simple tr td {
 	border:2px solid #B00606;
 }
 
-#sidebar{margin-right:5px;}
 
 .padded{
 	padding-left:5px;
@@ -186,151 +178,6 @@ table.simple tr td {
 	-webkit-box-shadow:0 0 10px #000;
 }
 
-
-/* For the details, see: http://flowplayer.org/tools/dateinput/index.html#skinning */
-
-/* the input field */
-.date {
-	border:1px solid #ccc;
-	text-align:center;
-}
-
-/* calendar root element */
-#calroot {
-	/* place on top of other elements. set a higher value if nessessary */
-	z-index:1;
-	
-	margin-top:-1px;
-	width:198px;
-	padding:2px;
-	background-color:#fff;
-	font-size:11px;
-	border:1px solid #ccc;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-box-shadow: 0 0 15px #666;
-	-webkit-box-shadow: 0 0 15px #666;	
-}
-
-/* head. contains title, prev/next month controls and possible month/year selectors */
-#calhead {	
-	padding:2px 0;
-	height:22px;
-} 
-
-#caltitle {
-	font-size:14px;
-	color:#0150D1;	
-	float:left;
-	text-align:center;
-	width:155px;
-	line-height:20px;
-	text-shadow:0 1px 0 #ddd;
-}
-
-#calnext, #calprev {
-	display:block;
-	width:20px;
-	height:20px;
-	background:transparent url(/images/prev.gif) no-repeat scroll center center;
-	float:left;
-	cursor:pointer;
-}
-
-#calnext {
-	background-image:url(/images/next.gif);
-	float:right;
-}
-
-#calprev.caldisabled, #calnext.caldisabled {
-	visibility:hidden;	
-}
-
-/* year/month selector */
-#caltitle select {
-	font-size:10px;	
-}
-
-/* names of the days */
-#caldays {
-	height:14px;
-	border-bottom:1px solid #ddd;
-}
-
-#caldays span {
-	display:block;
-	float:left;
-	width:28px;
-	text-align:center;
-}
-
-/* container for weeks */
-#calweeks {
-	background-color:#fff;
-	margin-top:4px;
-}
-
-/* single week */
-.calweek {
-	clear:left;
-	height:22px;
-}
-
-/* single day */
-.calweek a {
-	display:block;
-	float:left;
-	width:27px;
-	height:20px;
-	text-decoration:none;
-	font-size:11px;
-	margin-left:1px;
-	text-align:center;
-	line-height:20px;
-	color:#666;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px; 		
-} 
-
-/* different states */
-.calweek a:hover, .calfocus {
-	background-color:#ddd;
-}
-
-/* sunday */
-a.calsun {
-	color:red;		
-}
-
-/* offmonth day */
-a.caloff {
-	color:#ccc;		
-}
-
-a.caloff:hover {
-	background-color:rgb(245, 245, 250);		
-}
-
-
-/* unselecteble day */
-a.caldisabled {
-	background-color:#efefef !important;
-	color:#ccc	!important;
-	cursor:default;
-}
-
-/* current day */
-#calcurrent {
-	background-color:#498CE2;
-	color:#fff;
-}
-
-/* today */
-#caltoday {
-	background-color:#333;
-	color:#fff;
-}
-
 ul.flat{
 	list-style: none; 
 	margin-left: 0; 
@@ -341,10 +188,4 @@ table tr {vertical-align: middle;}
 
 .pointer{
 	height:25px !important;
-}
-
-a.password_reset_link{
-/*	padding-left:1em; */
-	color:#222222; 
-/*	font-size:1.4em*/
 }

@@ -24,7 +24,7 @@ file "app/views/layouts/application.html.haml", <<-CODE
 \t\t= csrf_meta_tag
 \t\t= yield(:header)
 	%body
-		#wrapper.container
+		#wrapper.container.container_16
 			#header
 			=flashy
 			=yield
@@ -35,12 +35,4 @@ CODE
 run 'rm app/helpers/application_helper.rb'
 file "app/helpers/application_helper.rb", File.open("#{@@base_path}resources/application_helper.rb", "rb"){|file| file.read}
 
-run 'rm app/controllers/application_controller.rb'
-file 'app/controllers/application_controller.rb', <<-CODE
-class ApplicationController < ActionController::Base
-  helper :all # include all helpers, all the time
-  protect_from_forgery
-end
-CODE
-
-initializer 'haml', "Haml::Template.options[:format] = :xhtml"
+initializer 'haml.rb', "Haml::Template.options[:format] = :xhtml"
