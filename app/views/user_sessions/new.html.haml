@@ -1,13 +1,7 @@
 %h2 Login	
 
--if @user_session.attempted_record && !@user_session.invalid_password? && !@user_session.attempted_record.confirmed?
-	.notice{:style=>"margin-top:2em"}
-		Sorry, before you can sign in you need to confirm your email address. 
-		= link_to('Resend confirmation email', resend_activation_users_path(:username => @user_session.attempted_record.username))
-
-
 =form_for @user_session do |f|
-	=format_error_messages(@user_session, "We could not log you in").html_safe
+	=format_error_messages(@user_session, "We could not log you in")
 	%p
 		= f.label 'username'
 		%br

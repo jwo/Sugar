@@ -44,3 +44,5 @@ Sugar, since it's sweet, will also:
 
 TODO:
 # - get all in the resources and app folder, rather than loading each one specifically
+# - create a factories folder
+# - Have a pre-defined user factory

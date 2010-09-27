@@ -17,7 +17,7 @@ module ApplicationHelper
       html << "\t\t</ul>\n"
       html << "\t</div>\n"
     end
-    html
+    html.html_safe
   end
 
   def flashy
