@@ -1,7 +1,7 @@
 RAILS 3 Template for generating a BDD style app.
 
 Sugar, which is sweeeeeeeeet, will give you the following gems:
-* Authlogic
+* Authlogic, from the latest source
 * Paperclip
 * S3
 * Haml

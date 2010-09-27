@@ -33,6 +33,6 @@ file "app/views/layouts/application.html.haml", <<-CODE
 CODE
 
 run 'rm app/helpers/application_helper.rb'
-file "app/helpers/application_helper.rb", File.open("#{@@base_path}resources/application_helper.rb", "rb"){|file| file.read}
+file "app/helpers/application_helper.rb", open("#{@@base_path}resources/application_helper.rb", "rb"){|file| file.read}
 
 initializer 'haml.rb', "Haml::Template.options[:format] = :xhtml"

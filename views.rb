@@ -1,1 +1,1 @@
-file "app/views/user_sessions/new.html.haml", File.open("#{@@base_path}app/views/user_sessions/new.html.haml", "rb"){|file| file.read}
+file "app/views/user_sessions/new.html.haml", open("#{@@base_path}app/views/user_sessions/new.html.haml", "rb"){|file| file.read}

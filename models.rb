@@ -10,4 +10,4 @@ else
 end
 
 run "rm app/models/#{user_file_name}.rb"
-file "app/models/user.rb", File.open("#{@@base_path}app/models/#{user_file_name}.rb", "rb"){|file| file.read}
+file "app/models/user.rb", open("#{@@base_path}app/models/#{user_file_name}.rb", "rb"){|file| file.read}
