@@ -5,6 +5,7 @@ CODE
 
 if @activerecord
   user_file_name = "ar_user"
+  generate "model users username:string name:string email:string crypted_password:string password_salt:string persistence_token:string"
 else
   user_file_name = "mongo_user"
 end

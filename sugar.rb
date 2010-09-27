@@ -1,12 +1,4 @@
-#TODO:
-# - confirm authlogic with sqllite
-
-# LATER
-# - get all in the resources and app folder
-
-
 @@base_path = "http://github.com/jwo/Sugar/raw/master/"
-#@@base_path = "/Users/jwo/chaione/sugar/"
 
 ask_orm = ask("\r\n\r\nWhat ORM framework do you want to use?\r\n\r\n(1) Active Record\r\n(2) MongoMapper Only\r\n(3) MongoMapper with ActiveRecord\r\n")
 if ["1", "2", "3"].include?(ask_orm)
