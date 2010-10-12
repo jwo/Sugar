@@ -15,6 +15,7 @@ Get started:
 		
 
 Sugar, which is sweeeeeeeeet, will give you the following gems:
+
 * Authlogic, from the latest source
 * Paperclip
 * S3
@@ -25,6 +26,7 @@ Sugar, which is sweeeeeeeeet, will give you the following gems:
 * rmagick
 
 Testing Gems
+
 * Factory Girl
 * AutoTest
 * RSpec2
@@ -34,6 +36,7 @@ Testing Gems
 * Webrat
 
 Sugar, since it's sweet, will also:
+
 * git setup
 * template cleanup
 * setup jquery and csrf
@@ -43,6 +46,7 @@ Sugar, since it's sweet, will also:
 * Use the ChaiOne latest chaione.css awesome UI styles
 
 TODO:
-# get all in the resources and app folder, rather than loading each one specifically
-# create a factories folder
-# Have a pre-defined user factory
+
+* get all in the resources and app folder, rather than loading each one specifically
+* create a factories folder
+* Have a pre-defined user factory
