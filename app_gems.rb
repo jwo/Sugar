@@ -1,9 +1,10 @@
 # Setup our Gems
-gem "rails", "3.0.0"
+gem "rails", "3.0.1"
 
 if @mongomapper
   gem 'mongo_mapper', "=0.8.4"
-  gem "bson_ext"
+  gem "bson", "=1.1.1"
+  gem "bson_ext", "=1.1.1"
   gem "bcrypt-ruby", :require => "bcrypt"
   gem "map_reduced",">= 0.1.1"
 end
@@ -13,7 +14,7 @@ if @activerecord
 end
 
 gem 'haml'
-gem "paperclip", "~> 2.3.3"
+gem "paperclip", "=2.3.3"
 gem "cancan"
 gem "aws-s3"
 gem "rmagick"
