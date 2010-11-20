@@ -2,7 +2,7 @@ RAILS 3 Template for generating a BDD style app.
 
 Get started:
 
-	rails new sweet -m http://github.com/jwo/Sugar/raw/master/sugar.rb
+	rails new sweet -m https://github.com/jwo/Sugar/raw/master/sugar.rb
 
 	*Edit /app/controllers/page_controller.rb, add:*
 	before_filter :require_user
